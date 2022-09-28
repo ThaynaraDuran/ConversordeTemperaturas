@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <title>Conversor</title>
+    </head>
+    <body>
+        <header>
+            <h1>Conversor de Temperaturas</h1>
+            <p id="subtitle">Converta graus Celsius, Fahrenheit e Kelvin.</p>
+        </header>
+        <section class="container">
+
+            <form id="form">
+            <div class="">
+                <label for="degree" class="conversor">Valor:</label>
+            </div>
+            <div class="">
+                <input type="number" id="degree" name="degree" class="typeInput" step="0.01" required/>
+           </div>
+            <div>
+                <p class="conversor">Converter de:</p>
+            </div>
+            <div class="">
+                <select class="typeInput" id="convertFrom">
+                    <option value="celsius">Celsius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+            </div>
+
+            <div>
+                <p class="conversor">Para:</p>
+            </div>
+            <div >
+                <select class="typeInput" id="convertTo">
+                    <option value="celsius">Celsius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+            </div>
+
+            <button id="btn" type="submit">Converter</button>
+            </form>
+            <h2>Resultado</h2>
+
+            <div id="result">
+                <p></p>
+            </div>
+
+        </section>
+        <footer>
+            <p id="footer">Create by <a href="https://www.linkedin.com/in/thaynara-duran-9883b622a/" target="_blank">ThaynaraDuran</a>
+            </p>    
+        <footer>
+        <script src="./script.js"></script>
+    </body>
+</html>
